@@ -48,6 +48,6 @@ app.get("/status", (req, res) => {
 });
 
 //Server Listen on a Port
-app.listen(80, function () {
+app.listen(process.env.PORT, function () {
   console.log("Example app listening on port 80!");
 });
