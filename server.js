@@ -34,8 +34,8 @@ app.post("/confirmation", (req, res) => {
     };
 
     //nedb Database
-    db.insert(dataToSave, function (err, newProfile) {
-      res.render("confirmation", { profile: newProfile });
+    db.insert(dataToSave, function (err, newMessage) {
+      res.render("confirmation", { message: newMessage });
     });
   });
 });
@@ -48,6 +48,6 @@ app.get("/status", (req, res) => {
 });
 
 //Server Listen on a Port
-app.listen(process.env.PORT, function () {
+app.listen(process.env.PORT || 80, function () {
   console.log("Example app listening on port 80!");
 });
