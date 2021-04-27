@@ -1,0 +1,174 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(315deg, #b3dfa1 0%, #f0e703 74%);
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+#title {
+  font-weight: 100;
+  height: 25vh;
+  /* padding-left: 1em;
+  padding-top: 1em; */
+  font-family: "Roboto", sans-serif;
+}
+
+#landing-message {
+  height: 55vh;
+  position: relative;
+}
+
+#landing-message h3 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1em;
+}
+
+#landing-info {
+  text-align: center;
+  margin: 1em 2em;
+  margin-bottom: 3em;
+}
+
+#down-arrow {
+  /* height: 20vh; */
+  margin: 64px;
+  font-size: 32px;
+  text-align: center;
+  color: #000000;
+}
+
+#footer {
+  margin-top: 2em;
+  padding: 2em;
+  text-align: center;
+}
+
+h1 {
+  height: 25vw;
+  padding-left: 0.5em;
+  color: #000000;
+}
+
+h2,
+h3 {
+  color: #000000;
+}
+
+p {
+  color: black;
+}
+
+.main-button {
+  color: white;
+  border: none;
+  width: 100%;
+  background: #000000;
+  padding: 2.5vw;
+  margin-bottom: 2em;
+}
+
+.main-button:focus {
+  outline: none;
+}
+
+select {
+  /* position: relative; */
+  left: 25%;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  background-color: #000000;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  /* transform: scale(1); */
+  width: 50%;
+  margin: 2px;
+  padding: 5px 5px;
+}
+
+input[type="text"] {
+  /* position: relative; */
+  left: 25%;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  background-color: #000000;
+  border: none;
+  color: white;
+  cursor: pointter;
+  font-size: 12px;
+  height: 26px;
+  /* transform: scale(1); */
+  width: 50%;
+  margin: 2px;
+  padding: 5px 5px;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: white;
+  font-size: 12px;
+}
+
+.imgcontainer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+#container {
+  width: 90vw;
+  margin-left: 5vw;
+}
+
+.button-app {
+  background-color: black;
+  padding: 0.7em;
+  font-size: 2em;
+  border: none;
+  border-radius: 50%;
+}
+
+.button-app:focus {
+  outline: none;
+}
+
+#app-buttons {
+  margin: 2em 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#automated-message-box {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: black;
+  text-align: center;
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+}
+
+#close-box {
+  font-size: 2em;
+  color: white;
+}
+
+.ion-icon {
+  color: black;
+}

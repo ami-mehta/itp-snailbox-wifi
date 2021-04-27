@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITP Snailbox</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous"></script> -->
+  </head>
+
+  <body>
+    <script>
+      function scrollDown() {
+        document
+          .getElementById("landing-info")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+    <!-- Landing Page -->
+    <header>
+      <div id="title">
+        <h1>ITP<br />Snailbox <ion-icon name="mail-sharp"></ion-icon></h1>
+      </div>
+    </header>
+    <div id="container">
+      <section>
+        <div id="landing-message">
+          <h3>A collective play mailbox </br>for the floor</i>
+          </h3>
+        </div>
+      </section>
+      <p id="down-arrow"><span onclick="scrollDown()">⌄</span></p>
+      <section>
+        <div id="landing-info">
+          <h2>SNAILMAIL</h2>
+          <p>Pariatur plaid green juice forage trust fund poutine ennui ea lyft magna thundercats culpa air plant photo booth. Palo santo twee waistcoat ugh, selvage kinfolk etsy quis brooklyn leggings hoodie do. Culpa four loko poutine direct trade portland non velit knausgaard cred ex normcore art party. Succulents poutine nisi, health goth sartorial sunt bitters elit in ex master cleanse neutra vegan.
+          </p>
+        </div>
+      </section>
+      <a href="/messages"><button class="main-button">Get Started</button></a>
+      <div id="footer">
+        <p>
+          *This site is under development.
+        </p>
+      </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  </body>
+</html>
