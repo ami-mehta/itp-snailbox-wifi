@@ -59,6 +59,7 @@ h1 {
 h2,
 h3 {
   color: #000000;
+  text-align: center;
 }
 
 p {
@@ -78,8 +79,7 @@ p {
   outline: none;
 }
 
-select {
-  /* position: relative; */
+/* select {
   left: 25%;
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -88,11 +88,10 @@ select {
   color: white;
   cursor: pointer;
   font-size: 12px;
-  /* transform: scale(1); */
   width: 50%;
   margin: 2px;
   padding: 5px 5px;
-}
+} */
 
 input[type="text"] {
   /* position: relative; */
@@ -105,7 +104,6 @@ input[type="text"] {
   cursor: pointter;
   font-size: 12px;
   height: 8em;
-  /* transform: scale(1); */
   width: 100%;
   padding: 5px 5px;
   margin-bottom: 2px;
@@ -117,14 +115,14 @@ input[type="text"] {
   font-size: 12px;
 }
 
-.imgcontainer {
+/* .imgcontainer {
   width: 80%;
   margin: 0 auto;
-}
+} */
 
-img {
+/* img {
   width: 100%;
-}
+} */
 
 #container {
   width: 90vw;
@@ -143,12 +141,12 @@ img {
   outline: none;
 }
 
-#app-buttons {
+/* #app-buttons {
   margin: 2em 0;
   display: flex;
   justify-content: space-around;
   width: 100%;
-}
+} */
 
 #automated-message-box {
   display: none;
@@ -164,12 +162,13 @@ img {
   padding: 0;
 }
 
-#close-box {
+/* #close-box {
   font-size: 2em;
   color: white;
-}
+} */
 
-.ion-icon {
+#ion-icon {
   color: black;
-  font-size: smaller;
+  font-size: 32px;
+  vertical-align: text-top;
 }

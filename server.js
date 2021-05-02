@@ -46,6 +46,22 @@ app.get("/status", (req, res) => {
     res.render("status", { data: messages });
   });
 });
+app.get("/checkmessage", (req, res) => {
+  db.find({}, function (err, messages) {
+    console.log(messages);
+    if (messages.length > 0) {
+      messages.sort(function (a, b) {
+        return a.timeStamp + b.timeStamp;
+      });
+      res.send(messages[0].message);
+      db.remove({ _id: messages[0]._id }, {}, function (err, numRemoved) {
+        // numRemoved = 1
+      });
+    } else {
+      res.send("No messages!");
+    }
+  });
+});
 
 //Server Listen on a Port
 app.listen(process.env.PORT || 80, function () {
