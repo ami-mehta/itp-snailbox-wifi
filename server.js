@@ -62,6 +62,26 @@ app.get("/checkmessage", (req, res) => {
     }
   });
 });
+app.get("/playprompts", (req, res) => {
+  let prompts = [
+    "go check the whatever",
+    "go do another thing",
+    "asdlfkjasldkfjl;kjasdf",
+    "asdlfkjasldkfjl;kjasdf",
+    "asdlfkjasldkfjl;kjasdf",
+    "asdlfkjasldkfjl;kjasdf",
+    "asdlfkjasldkfjl;kjasdf",
+    "asdlfkjasldkfjl;kjasdf",
+    "asdlfkjasldkfjl;kjasdf",
+    "asdlfkjasldkfjl;kjasdf",
+    "asdlfkjasldkfjl;kjasdf",
+    "asdlfkjasldkfjl;kjasdf",
+    "asdlfkjasldkfjl;kjasdf",
+  ];
+  let prompt = prompts[Math.floor(Math.random() * prompts.length)];
+
+  res.send(prompt);
+});
 
 //Server Listen on a Port
 app.listen(process.env.PORT || 80, function () {
