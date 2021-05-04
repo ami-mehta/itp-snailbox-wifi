@@ -58,25 +58,27 @@ app.get("/checkmessage", (req, res) => {
         // numRemoved = 1
       });
     } else {
-      res.send("No messages!");
+      res.send("Sorry, no messages!");
     }
   });
 });
 app.get("/playprompts", (req, res) => {
   let prompts = [
-    "go check the whatever",
-    "go do another thing",
-    "asdlfkjasldkfjl;kjasdf",
-    "asdlfkjasldkfjl;kjasdf",
-    "asdlfkjasldkfjl;kjasdf",
-    "asdlfkjasldkfjl;kjasdf",
-    "asdlfkjasldkfjl;kjasdf",
-    "asdlfkjasldkfjl;kjasdf",
-    "asdlfkjasldkfjl;kjasdf",
-    "asdlfkjasldkfjl;kjasdf",
-    "asdlfkjasldkfjl;kjasdf",
-    "asdlfkjasldkfjl;kjasdf",
-    "asdlfkjasldkfjl;kjasdf",
+    "Brew a pot of coffee or tea to share. The floor will thank you.",
+    "Say hello to someone you recognize from Zoom but haven't met in person.",
+    "Take five to stretch.",
+    "Go for a walk around the floor.",
+    "Try a new tool out from the shop.",
+    "Check on the plants! Do they need water? Take care of them.",
+    "Check if the vending machine is empty...",
+    "Say hello to someone you've never met before. Tell them the snail sent you.",
+    "Look for the snail around the floor. Move it to another location once you find it. ",
+    "Look for the snail around the floor. Let it sit next to you for a while. It's been lonely out there in the bins.",
+    "Look for the snail around the floor. Leave it next to someone with a note. You could make someone's day.",
+    "Look for the snail around the floor. Leave it in someone's bin. It will find its way back.",
+    "Look for the snail around the floor. Place it on an empty table.",
+    "Look for the snail around the floor. Place it on an empty seat.",
+    "Look for the snail around the floor. Place it next to a plant.",
   ];
   let prompt = prompts[Math.floor(Math.random() * prompts.length)];
 

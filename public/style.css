@@ -172,3 +172,7 @@ input[type="text"] {
   font-size: 32px;
   vertical-align: text-top;
 }
+
+#coc-link {
+  color: black;
+}
